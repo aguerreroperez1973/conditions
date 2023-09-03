@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <title>Badge Premier League</title>
+</head>
+<body>
+    <div><h1>Selecciona tus insigneas: </h1>
+    </div>
+        <div class="badge">
+            <div class="input-team">
+                <img  src="./assets/imgs/manchester2.png" alt="">
+                <input id="badge1" type="number">
+            </div>
+            <div class="input-team">
+                <img src="./assets/imgs/liverpolo.png" alt="">
+                <input id="badge2" type="number">
+            </div>
+            <div class="input-team">
+                <img src="./assets/imgs/newcastle.png" alt="">
+                <input id="badge3" type="number">
+            </div>
+        </div>
+    <div>
+        
+        <button onclick="
+                               let badge1 = document.querySelector('#badge1').value;
+                               let badge2 = document.querySelector('#badge2').value;
+                               let badge3 = document.querySelector('#badge3').value;
+                               let badgeTotal= Number(badge1) + Number(badge2) + Number(badge3);
+                            
+                            if ( badgeTotal == 0){
+                                message = document.querySelector('p')
+                                message.style.color = 'red';
+                                message.innerHTML = 'Error: Seleccionaste ' + badgeTotal + ' insignias';
+                            }
+                              else if ( badgeTotal <= 10){
+                                message = document.querySelector('p')
+                                message.style.color = 'green';
+                                message.innerHTML = 'Excelente Seleccionaste ' + badgeTotal + ' insignias';
+                            } else {
+                                message = document.querySelector('p')
+                                message.style.color = 'orange';
+                                message.innerHTML = 'Seleccionaste demasiadas insignias';
+                            }
+                          
+            "> VERIFICAR </button>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <script src="./assets/js/script2.js"></script>
+</body>
+</html>

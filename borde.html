@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Border Change</title>
+</head>
+<body>
+    <div>
+        <img id="imagen1" src="./assets/imgs/manchester.png" alt="" width="262px" height="167px" 
+            onclick="
+                    
+                    if (bordeImagen.style.border == '2px solid red')
+                        {
+                            bordeImagen.style.border = 'none';
+                
+                        } else {
+                        
+                            bordeImagen.style.border = '2px solid red';
+                        } 
+                    ">
+    </div>
+    <div>
+        <p>haz click en la imagen</p>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

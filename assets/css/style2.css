@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+body {
+    margin-top: 10px ;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+img {
+    width: 262px;
+    height: 167px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    text-align: center;
+}
+
+.input-team {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 0 0;
+}
+
+button {
+    color: white;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(17, 17, 139);
+}
+
+p {
+    font-size: 28px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+}
+
+select {
+    font-size: 20px;
+    padding: 10px 5px;
+    margin-left: 10px;
+}
